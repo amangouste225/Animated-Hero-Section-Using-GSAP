@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>GSAP Flip | Animations</title>
+  <link rel="stylesheet" href="./src/style.scss">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: "#da373d",
+          },
+        },
+      },
+    };
+  </script>
+
+</head>
+
+<body data-barba="wrapper">
+  <ul class="transition">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+  <main data-barba="container" data-barba-namespace="home" class="w-full h-screen bg-white text-black relative">
+    <header class="flex justify-between p-5 px-8 items-center fixed z-10 top-0 w-full bg-white text-black">
+      <div class="logo text-4xl font-semibold headAnime">.</div>
+      <ul class="flex gap-y-1 headAnime font-medium text-xl items-center">
+        <li class="px-3 py-1 rounded-l-full bg-clifford text-white menuLinks">
+          <a href="home.html">home</a>
+        </li>
+        <li class="px-3 py-1 rounded-r-full bg-black text-white">
+          <a href="about.html">About</a>
+        </li>
+      </ul>
+    </header>
+
+    <div class="description w-[80%] text-3xl lg:text-6xl mx-auto grid place-content-center">
+      <h1 class="stagged text-center">
+        <div class="lg:h-[70px] overflow-hidden">
+          <div class="line">
+            My name is Ange
+          </div>
+        </div>
+        <div class="lg:h-[70px] overflow-hidden">
+          <div class="line">
+            a creative web developer
+          </div>
+        </div>
+        <div class="h-[70px] overflow-hidden">
+          <div class="line">
+            based in Abidjan
+          </div>
+        </div>
+      </h1>
+
+      </p>
+    </div>
+
+    <div class="intro__images initial">
+      <img src="/images/img1.jpg" alt="" class="object-cover" />
+      <img src="/images/img2.jpg" alt="" class="object-cover" />
+      <img src="/images/img3.jpg" alt="" class="object-cover" />
+      <img src="/images/img4.jpg" alt="" class="object-cover centerImg" data-hidden />
+      <img src="/images/img5.jpg" alt="" class="object-cover" />
+      <img src="/images/img6.jpg" alt="" class="object-cover" />
+      <img src="/images/img7.jpg" alt="" class="object-cover" />
+    </div>
+
+    <div class="grid grid-cols-3 lg:grid-cols-7 grid-flow-col	image-grid absolute bottom-2 mx-2 w-full gap-4 h-60">
+    </div>
+  </main>
+
+  <script type="module" src="./src/main.ts"></script>
+</body>
+
+</html>
